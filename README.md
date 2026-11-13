@@ -1,59 +1,32 @@
-# Cinematic_Portfolio
+# React + TypeScript + Vite
 
-# Personal Portfolio Website
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-A modern, responsive personal portfolio website built to showcase my profile, education, technical skills, certifications, projects, and contact information.
+Currently, two official plugins are available:
 
-## About the Project
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-This portfolio provides an overview of my academic background, technical knowledge, and project experience. It helps visitors learn about my work and connect with me professionally.
+## React Compiler
 
-## Features
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- Home section with personal introduction
-- About Me section
-- Education details
-- Technical skills
-- Certifications
-- Project showcase
-- Contact information
-- GitHub and LinkedIn profile links
-- Responsive user interface
+## Expanding the Oxlint configuration
 
-## Technologies Used
+If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
 
-- React.js
-- TypeScript
-- Vite
-- HTML
-- CSS
-- Tailwind CSS
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "oxc"],
+  "options": {
+    "typeAware": true
+  },
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+  }
+}
+```
 
-## Contact
-
-- **Name:** Suresh G
-- **Email:** sureshg.gu23@gmail.com
-- **GitHub:** https://github.com/sureshggu23-eng
-- **LinkedIn:** https://www.linkedin.com/in/suresh-g-841b3330b/
-
-## Run Locally
-
-1. Clone or download this repository.
-2. Open the project folder in VS Code.
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-5. Open the local URL displayed in the terminal.
-
----
-
-Developed by **Suresh G**
+See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
