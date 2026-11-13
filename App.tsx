@@ -1,10 +1,11 @@
 import React from 'react';
-import { HeroSection } from './components/HeroSection';
-import { AboutSection } from './components/AboutSection';
-import { ProjectsSection } from './components/ProjectsSection';
-import { SkillsSection } from './components/SkillsSection';
-import { ExperienceSection } from './components/ExperienceSection';
-import { ContactSection } from './components/ContactSection';
+
+import { HeroSection } from './HeroSection';
+import { AboutSection } from './AboutSection';
+import { ProjectsSection } from './ProjectsSection';
+import { SkillsSection } from './SkillsSection';
+import { ExperienceSection } from './ExperienceSection';
+import { ContactSection } from './ContactSection';
 
 function App() {
   return (
